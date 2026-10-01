@@ -1,0 +1,49 @@
+
+# @app.route('/chat', methods=['POST'])
+# def chat():
+#     try:
+#         # Nhận dữ liệu từ request
+#         data = request.json
+#         logging.debug("=== Nhận request từ client ===")
+#         logging.debug("Dữ liệu nhận được: %s", data)
+
+#         # Lấy message từ dữ liệu gửi tới, đảm bảo là chuỗi
+#         user_message = (data.get("message") or "").strip()
+#         if not user_message:
+#             logging.warning("⚠️ Không có message từ client.")
+#             return jsonify({"error": "Message is required"}), 400
+#         # Nếu câu hỏi quá ngắn (text only)
+#         if len(user_message) < 3:
+#             logging.warning("⚠️ Câu hỏi quá ngắn, gọi Gemini luôn.")
+#             gemini_response = call_gemini(user_message)
+#             return jsonify({"response": gemini_response, "confidence": 0})
+#         # Chỉ sử dụng retriever cho truy vấn văn bản
+#         retrieved_data, best_distance = search_data(user_message, threshold=60)
+#         if retrieved_data:
+#             if isinstance(retrieved_data, tuple):
+#                 retrieved_data = retrieved_data[0]
+#             confidence = float(max(0, (60 - best_distance) / 60))
+#             logging.debug("👉 Độ tự tin tính được: %.2f", confidence)
+#             print(confidence)
+#             if confidence > 0.8:
+#                 logging.debug("✅ Độ tự tin cao, trả về dữ liệu retriever.")
+#                 return jsonify({"response": retrieved_data, "confidence": confidence})
+
+#             elif confidence > 0.5:
+#                 logging.debug("🔀 Độ tự tin trung gian, kết hợp retriever và Gemini.")
+#                 gemini_response = call_gemini(user_message)
+#                 combined_response = f"{retrieved_data}\n\nThông tin bổ sung: {gemini_response}"
+#                 return jsonify({"response": combined_response, "confidence": confidence})
+#             else:
+#                 logging.debug("⚠️ Độ tự tin thấp (%.2f), sử dụng phản hồi từ Gemini.", confidence)
+#                 gemini_response = call_gemini(user_message)
+#                 return jsonify({"response": gemini_response, "confidence": confidence})
+#         else:
+#             logging.warning("⚠️ Retriever không trả về dữ liệu phù hợp, chuyển qua gọi Gemini.")
+#             gemini_response = call_gemini(user_message)
+#             return jsonify({"response": gemini_response, "confidence": 0})
+#     except Exception as e:
+#         error_detail = str(e)
+#         logging.error("❌ Lỗi trong endpoint /chat: %s", error_detail)
+#         return jsonify({"error": error_detail}), 500
+    # Nếu là GET: trả về trang giao diện chính

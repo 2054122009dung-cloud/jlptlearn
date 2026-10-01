@@ -1,0 +1,209 @@
+{
+    "questions": [
+    {
+        "id": 0,
+        "question": "bạn là ai vậy?",
+        "text": "xin chào, tôi là chatbot của JLPTLearn, tôi có thể giúp gì cho bạn?"
+    },
+    {
+        "id": 1,
+        "question": "JLPT N1 là gì?",
+        "text": "JLPT N1 là cấp độ khó nhất của kỳ thi tiếng Nhật, yêu cầu trình độ tương đương với người bản xứ."
+    },
+    {
+        "id": 2,
+        "question": "Ngữ pháp N2 dùng để làm gì?",
+        "text": "Cấu trúc ngữ pháp N2 thường xuất hiện trong giao tiếp hàng ngày và văn bản chuyên ngành."
+    },
+    {
+        "id": 3,
+        "question": "JLPT N3 là gì?",
+        "text": "JLPT N3 là cấp độ trung cấp, phù hợp với người học có nền tảng vững."
+    },
+    {
+        "id": 4,
+        "question": "JLPT có bao nhiêu cấp độ?",
+        "text": "JLPT có tổng cộng 5 cấp độ: N5, N4, N3, N2 và N1."
+    },
+    {
+        "id": 5,
+        "question": "Làm sao để học Kanji nhanh?",
+        "text": "Bạn có thể học Kanji nhanh bằng cách sử dụng flashcard, luyện viết và đọc nhiều tài liệu tiếng Nhật."
+    },
+    {
+        "id": 6,
+        "question": "JLPT N4 có khó không?",
+        "text": "JLPT N4 là cấp độ sơ trung cấp, không quá khó nhưng yêu cầu nền tảng vững về từ vựng và ngữ pháp."
+    },
+    {
+        "id": 7,
+        "question": "Tôi nên học JLPT N5 trong bao lâu?",
+        "text": "Thời gian học JLPT N5 tùy thuộc vào trình độ của bạn, nhưng trung bình cần khoảng 3-6 tháng."
+    },
+    {
+        "id": 8,
+        "question": "Cấu trúc đề thi JLPT gồm những phần nào?",
+        "text": "Đề thi JLPT gồm ba phần chính: Từ vựng - Ngữ pháp - Đọc hiểu, Nghe hiểu."
+    },
+    {
+        "id": 9,
+        "question": "JLPT có hiệu lực bao lâu?",
+        "text": "Chứng chỉ JLPT không có thời hạn, có giá trị vĩnh viễn."
+    },
+    {
+        "id": 10,
+        "question": "Làm sao để cải thiện kỹ năng nghe JLPT?",
+        "text": "Bạn có thể luyện nghe JLPT bằng cách xem phim, nghe podcast tiếng Nhật và làm bài luyện nghe thường xuyên."
+    },
+    {
+        "id": 11,
+        "question": "Tôi có thể thi JLPT bao nhiêu lần trong năm?",
+        "text": "Kỳ thi JLPT được tổ chức hai lần một năm vào tháng 7 và tháng 12 ở nhiều quốc gia."
+    },
+    {
+        "id": 12,
+        "question": "Làm sao để mở rộng vốn từ vựng JLPT?",
+        "text": "Bạn có thể mở rộng vốn từ bằng cách sử dụng flashcard, đọc sách tiếng Nhật và thực hành giao tiếp hàng ngày."
+    },
+    {
+        "id": 13,
+        "question": "JLPT có phần thi nói không?",
+        "text": "Không, JLPT chỉ kiểm tra kỹ năng đọc và nghe, không có phần thi nói và viết."
+    },
+    {
+        "id": 14,
+        "question": "Tôi có thể ôn luyện JLPT online ở đâu?",
+        "text": "Bạn có thể ôn luyện JLPT online qua các trang web như JLPTLearn, Nihongo Pro hoặc ứng dụng như Anki, BunPro."
+    },
+    {
+        "id": 15,
+        "question": "Có tài liệu nào tốt để ôn thi JLPT không?",
+        "text": "Có nhiều tài liệu tốt như sách Shin Kanzen Master, Sou Matome, và các bộ đề thi thử trên mạng."
+    },
+    {
+        "id": 16,
+        "question": "Làm sao để làm bài thi JLPT hiệu quả?",
+        "text": "Để làm bài thi hiệu quả, bạn nên quản lý thời gian, đọc kỹ đề bài và làm quen với định dạng đề thi trước."
+    },
+    {
+        "id": 17,
+        "question": "Tôi có thể tìm bạn học ôn thi JLPT ở đâu?",
+        "text": "Bạn có thể tìm bạn học qua các nhóm Facebook, diễn đàn học tiếng Nhật hoặc tham gia các lớp học tại trung tâm."
+    },
+    {
+        "id": 18,
+        "question": "Có cần phải biết Kanji để thi JLPT không?",
+        "text": "Có, Kanji là phần quan trọng trong kỳ thi JLPT, đặc biệt là ở các cấp độ N2 và N1."
+    },
+    {
+        "id": 19,
+        "question": "Làm sao để nhớ Kanji lâu dài?",
+        "text": "Bạn có thể nhớ Kanji lâu dài bằng cách luyện viết thường xuyên, sử dụng flashcard và áp dụng vào thực tế."
+    },
+    {
+        "id": 20,
+        "question": "Có cách nào giúp tôi tự tin hơn khi thi JLPT không?",
+        "text": "Để tự tin hơn khi thi, bạn nên luyện tập thường xuyên, tham gia các buổi ôn tập nhóm và giữ tâm lý thoải mái."
+    },
+    {
+        "id": 21,
+        "question": "Học viên có thể làm gì trên JLPTLearn?",
+        "text": "Học viên có thể chọn cấp độ luyện thi, làm bài thi với bộ đếm giờ, chọn đáp án, xem đề thi PDF như thi thật, chấm điểm và lưu bài làm dang dở."
+    },
+    {
+        "id": 22,
+        "question": "Góc học tập trên JLPTLearn có gì đặc biệt?",
+        "text": "Học viên có thể vừa học vừa tra từ điển từ nhiều nguồn, ghi chú, thư giãn và tối ưu hóa việc học tập hiệu quả."
+    },
+    {
+        "id": 23,
+        "question": "Giáo viên có thể làm gì trên JLPTLearn?",
+        "text": "Giáo viên có thể nhập file PDF đề thi JLPT, nhập đáp án để hệ thống tự động chấm điểm, và hỗ trợ học viên trong quá trình ôn tập."
+    },
+    {
+        "id": 24,
+        "question": "Quản trị viên có vai trò gì trên JLPTLearn?",
+        "text": "Quản trị viên có thể quản lý người dùng, xóa người dùng, thêm người dùng mới và chỉnh sửa vai trò người dùng trên hệ thống."
+    },
+    {
+        "id": 25,
+        "question": "Học viên có thể lưu bài làm dang dở trên JLPTLearn không?",
+        "text": "Có, hệ thống cho phép học viên lưu bài làm dang dở và tiếp tục khi có thời gian."
+    },
+    {
+        "id": 26,
+        "question": "JLPTLearn có tính năng chấm điểm tự động không?",
+        "text": "Có, hệ thống sẽ tự động chấm điểm dựa trên đáp án do giáo viên nhập vào."
+    },
+    {
+        "id": 27,
+        "question": "JLPTLearn hỗ trợ những cấp độ nào?",
+        "text": "JLPTLearn hỗ trợ đầy đủ các cấp độ từ N5 đến N1."
+    },
+    {
+        "id": 28,
+        "question": "Làm thế nào để giáo viên nhập đề thi JLPT vào hệ thống?",
+        "text": "Giáo viên có thể tải file PDF đề thi lên hệ thống và nhập đáp án để chấm điểm tự động."
+    },
+    {
+        "id": 29,
+        "question": "JLPTLearn có hỗ trợ giao diện giống kỳ thi thật không?",
+        "text": "Có, giao diện thi thử được thiết kế giống kỳ thi thật với file PDF đề thi và bộ đếm thời gian."
+    },
+    {
+        "id": 30,
+        "question": "Người dùng có thể đổi vai trò trên JLPTLearn không?",
+        "text": "Quản trị viên có quyền chỉnh sửa vai trò của người dùng, ví dụ như nâng cấp từ học viên lên giáo viên."
+    },
+    {
+        "id": 31,
+        "question": "Chatbot của JLPTLearn có thể giúp học viên ôn tập JLPT như thế nào?",
+        "text": "Chatbot trên JLPTLearn cung cấp các bài tập ôn luyện, giải đáp thắc mắc và hướng dẫn cách sử dụng tài liệu ôn thi phù hợp với từng cấp độ."
+      },
+      {
+        "id": 32,
+        "question": "Chatbot của JLPTLearn có hỗ trợ tìm kiếm tài liệu ôn thi không?",
+        "text": "Có, chatbot có thể tìm kiếm tài liệu ôn thi từ cơ sở dữ liệu của trang web và đưa ra các gợi ý hữu ích cho học viên. Chỉ cần gõ “tìm kiếm”, “search”, “tìm” hoặc “how” là bạn sẽ nhận các link tra cứu."
+      },
+      {
+        "id": 33,
+        "question": "Làm thế nào để tương tác với chatbot trên JLPTLearn?",
+        "text": "Bạn chỉ cần nhập câu hỏi hoặc yêu cầu vào ô chat, và chatbot sẽ trả lời tự động dựa trên dữ liệu được tích hợp sẵn cùng với các hướng dẫn cụ thể cho từng tình huống."
+      },
+      {
+        "id": 34,
+        "question": "Chatbot có thể giải đáp thắc mắc về đề thi JLPT không?",
+        "text": "Đúng, chatbot có thể giải thích cấu trúc đề thi, hướng dẫn làm bài và cung cấp các mẹo luyện thi cho từng cấp độ JLPT, từ N5 đến N1."
+      },
+      {
+        "id": 35,
+        "question": "Chatbot có hỗ trợ luyện tập các kỹ năng tiếng Nhật không?",
+        "text": "Có, chatbot hỗ trợ luyện nghe, đọc, ngữ pháp và từ vựng, giúp bạn cải thiện toàn diện các kỹ năng cần thiết cho kỳ thi JLPT."
+      },
+      {
+        "id": 36,
+        "question": "Chatbot có thể tích hợp với các công cụ học tập khác trên JLPTLearn không?",
+        "text": "Đúng vậy, chatbot được tích hợp với flashcard, bài kiểm tra và các công cụ học tập khác để tối ưu hóa quá trình ôn luyện và theo dõi tiến độ của học viên."
+      },
+      {
+        "id": 37,
+        "question": "Chatbot có hỗ trợ tìm kiếm thông tin về giáo viên và trung tâm luyện thi không?",
+        "text": "Có, chatbot có thể cung cấp thông tin liên hệ, đánh giá và lịch học của các giáo viên cũng như trung tâm luyện thi hợp tác với JLPTLearn."
+      },
+      {
+        "id": 38,
+        "question": "Làm thế nào để chatbot hỗ trợ học viên theo dõi tiến độ học tập?",
+        "text": "Chatbot hướng dẫn bạn cách lưu bài làm dang dở, theo dõi tiến độ học tập và gợi ý lộ trình ôn luyện phù hợp với mục tiêu cá nhân của bạn."
+      },
+      {
+        "id": 39,
+        "question": "Chatbot có hỗ trợ giải đáp thắc mắc về các cấp độ JLPT không?",
+        "text": "Có, chatbot có thể giải thích chi tiết về từng cấp độ từ N5 đến N1, giúp bạn hiểu rõ yêu cầu của kỳ thi và lựa chọn lộ trình học phù hợp."
+      },
+      {
+        "id": 40,
+        "question": "Chatbot có thể giúp học viên đặt lịch học hoặc đăng ký lớp luyện thi không?",
+        "text": "Không, chatbot chỉ hỗ trợ giải đáp thắc mắc, bài tập, và cách sử dụng trang web JLPTLearn"
+      }
+    ]
+}

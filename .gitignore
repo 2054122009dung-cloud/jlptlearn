@@ -1,0 +1,61 @@
+# System & OS
+.DS_Store
+Thumbs.db
+*.orig
+*.rej
+
+# IDEs & Editors
+/.fleet
+/.idea
+/.nova
+/.vscode
+/.zed
+
+# Laravel & PHP
+/vendor/
+/node_modules/
+/storage/
+/storage/*.key
+/storage/pail
+/bootstrap/cache/
+.env
+.env.*
+.env.backup
+.env.production
+/public/storage
+/public/hot
+/public/build
+.phpunit.result.cache
+.phpunit.cache
+/phpactor.json
+composer.lock
+Homestead.json
+Homestead.yaml
+/auth.json
+
+# Python & Virtual Environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+
+# VOICEVOX & Tools
+VOICEVOX/
+.VOICEVOX/
+ffmpeg*
+
+# Heavy Files & Media (Bỏ qua file nặng)
+.speechtotext/
+public/videos/
+*.mp4
+*.7z
+*.tar.xz
+
+# Logs & Temp
+*.log
+*.bak
+*.swp
+*.swo
+npm-debug.log
+yarn-error.log

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Đăng nhập qua email</h2>
+    <form id="email-login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Mật khẩu" required>
+        <button type="submit">Đăng nhập</button>
+    </form>
+
+    <h3>Hoặc đăng nhập qua Google</h3>
+    <button onclick="loginWithGoogle()">Đăng nhập với Google</button>
+
+    <!-- Thêm Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+
+    <!-- Tải firebase.js -->
+    <script src="resources/js/firebase.js"></script>
+
+    <script>
+
+        // Lắng nghe sự kiện submit form đăng nhập qua email
+        document.getElementById('email-login-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Gọi hàm đăng nhập qua email
+            loginWithEmail(email, password);
+        });
+    </script>
+</body>
+</html>

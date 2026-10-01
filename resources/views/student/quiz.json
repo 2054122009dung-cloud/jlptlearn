@@ -1,0 +1,101 @@
+{
+    "de_thi": "quiz từ vựng",
+    "cau_hoi": [
+      {
+        "ma_cau_hoi": "001",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "文章：『勇敢』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "ゆうがん"},
+          {"id": 2, "noi_dung": "ゆうかん"},
+          {"id": 3, "noi_dung": "ゆうけん"},
+          {"id": 4, "noi_dung": "ゆうげん"}
+        ],
+        "dap_an_dung": 2
+      },
+      {
+        "ma_cau_hoi": "002",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "『忠告』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "しんこく"},
+          {"id": 2, "noi_dung": "じゅうこく"},
+          {"id": 3, "noi_dung": "ちゅうこく"},
+          {"id": 4, "noi_dung": "じんこく"}
+        ],
+        "dap_an_dung": 3
+      },
+      {
+        "ma_cau_hoi": "003",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "『監督を慕っている』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "いたわって"},
+          {"id": 2, "noi_dung": "うやまって"},
+          {"id": 3, "noi_dung": "したって"},
+          {"id": 4, "noi_dung": "かばって"}
+        ],
+        "dap_an_dung": 3
+      },
+      {
+        "ma_cau_hoi": "004",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "『施錠』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "せいてい"},
+          {"id": 2, "noi_dung": "せってい"},
+          {"id": 3, "noi_dung": "せいじょう"},
+          {"id": 4, "noi_dung": "せじょう"}
+        ],
+        "dap_an_dung": 3
+      },
+      {
+        "ma_cau_hoi": "005",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "『沈下』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "ちんげい"},
+          {"id": 2, "noi_dung": "ちんか"},
+          {"id": 3, "noi_dung": "しんか"},
+          {"id": 4, "noi_dung": "しんげ"}
+        ],
+        "dap_an_dung": 2
+      },
+      {
+        "ma_cau_hoi": "006",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "『阻まれて』の読み方は何ですか？",
+        "dap_an": [
+          {"id": 1, "noi_dung": "かこむ"},
+          {"id": 2, "noi_dung": "からむ"},
+          {"id": 3, "noi_dung": "こばむ"},
+          {"id": 4, "noi_dung": "はばむ"}
+        ],
+        "dap_an_dung": 4
+      },
+      {
+        "ma_cau_hoi": "007",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "住民の『強硬』な反対にあい、 ごみ処理場の建設は見送られた。",
+        "dap_an": [
+            {"id": 1, "noi_dung": "ごうこう"},
+            {"id": 2, "noi_dung": "きょうこう"},
+            {"id": 3, "noi_dung": "ごうじょう"},
+            {"id": 4, "noi_dung": "きょうご"}
+        ],
+        "dap_an_dung": 2
+    },
+    {
+        "ma_cau_hoi": "008",
+        "loai": "ngon_ngu_ki_nang",
+        "de_bai": "今回の調査で考古学の通説を『覆す』大発見がなされた。",
+        "dap_an": [
+            {"id": 1, "noi_dung": "くつがえす"},
+            {"id": 2, "noi_dung": "もたらす"},
+            {"id": 3, "noi_dung": "くずす"},
+            {"id": 4, "noi_dung": "ゆるがす"}
+        ],
+        "dap_an_dung": 1
+    }
+    ]
+  }

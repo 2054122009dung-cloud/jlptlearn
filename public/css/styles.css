@@ -1,0 +1,1080 @@
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2 {
+    font-size: 28px;
+    color: #4A90E2;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Container chính của chat */
+/* Container chính của chat */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
+    background: linear-gradient(145deg, #ffffff, #e0f7fa); /* Gradient nền nhẹ nhàng */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.15);
+    font-family: 'Times New Roman';
+    border: 1px solid #ddd; /* Thêm viền mềm mại */
+    position: relative;
+    background-image: url('https://example.com/your-image.png'); /* Thêm hình nền nhẹ nếu cần */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hiệu ứng ánh sáng cho viền */
+.chat-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    pointer-events: none;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 10px rgba(0, 178, 255, 0.8), 0px 0px 20px rgba(0, 178, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0px 0px 30px rgba(0, 178, 255, 1), 0px 0px 50px rgba(0, 178, 255, 0.6);
+    }
+}
+
+/* Khung hiển thị tin nhắn */
+.chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.7); /* Làm nền khung tin nhắn trong suốt */
+    backdrop-filter: blur(8px); /* Hiệu ứng mờ nền */
+    border-radius: 10px;
+    box-shadow: inset 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tin nhắn chung */
+.message {
+    font-style: italic; /* Chữ nghiêng */
+    padding: 12px;
+    font-family:"Times New Roman"; /* Phông chữ hoạt hình, dễ thương */
+    font-size: 14px; /* Kích thước chữ nhỏ vừa phải */
+    line-height: 1.4; /* Tăng khoảng cách dòng cho dễ đọc */
+    margin: 8px 0;
+    word-wrap: break-word;
+    border-radius: 15px;
+    max-width: 80%;
+    position: relative;
+    animation: messageFadeIn 0.5s ease-out; /* Thêm thời gian lâu hơn để mượt mà hơn */
+}
+
+/* Tin nhắn từ người dùng */
+.user {
+    background: #6a9eff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Tin nhắn từ chatbot */
+.bot {
+    background: #eee;
+    color: #333;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Ô nhập tin nhắn */
+.chat-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background: white;
+    border-radius: 0 0 20px 20px; /* Bo góc dưới cho khung nhập tin nhắn */
+}
+
+/* Input tin nhắn */
+.chat-input input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Nút gửi tin nhắn */
+.chat-input button {
+    padding: 12px 18px;
+    margin-left: 10px;
+    border: none;
+    background: #6a9eff;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.chat-input button:hover {
+    background: #4d86e1;
+}
+
+@keyframes messageFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Bắt đầu ở vị trí thấp hơn một chút */
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(10px); /* Tăng lên một chút */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Về vị trí ban đầu */
+    }
+}
+
+/* Thêm transition mượt mà cho tin nhắn */
+
+/* Thêm hiệu ứng cho bot khi gửi tin nhắn */
+.bot::after {
+    content: "🤖";
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    font-size: 18px;
+}
+.message.bot {
+    text-align: left;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+.header {
+    background: linear-gradient(135deg, #F5E1DA, #EAC0B2); /* Soft, warm pastel gradient */
+    color: #6B2B24; /* Earthy red-brown, inspired by Ghibli’s palettes */
+    padding: 20px 30px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #C47C6C; /* Muted reddish border for warmth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for a natural feel */
+    border-radius: 0 0 15px 15px; /* Rounded bottom edges for a cozy look */
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+
+
+}
+
+.header:hover {
+    background: linear-gradient(135deg, #EAC0B2, #F5E1DA);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header-title {
+    font-weight: bold;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+.header-nav a {
+    color: #6B2B24;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+.header-nav a:hover {
+    color: #C47C6C;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 90%;
+    background: white;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container-s {
+    width: 90%;
+    background: white;
+    margin: 0 auto;
+    border-radius: 20px;
+    border-color: #5A3E36;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-family:  "Times New Roman";
+    font-size: 36px;
+    font-style: italic; /* Chữ nghiêng */
+    font-weight: 600; /* Tăng độ đậm nhẹ để không quá mỏng */
+    color: #5A3E36; /* Nâu đất cổ điển, tạo cảm giác thư tay */
+    text-align: center; /* Căn giữa cho đẹp */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng chữ nhẹ */
+}
+.login-form-container {
+    max-width: 400px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+.login-form-header {
+    margin-bottom: 1rem;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif; /* Use a hand-drawn font if available */
+    color: #6B2B24; /* Earthy red like in Ghibli’s warm palettes */
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #F5E1DA, #EAC0B2); /* Soft pastel gradient */
+    border: 2px solid #C47C6C; /* Muted red border */
+    border-radius: 12px; /* Softer, rounded edges */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(145deg, #EAC0B2, #F5E1DA);
+    transform: translateY(-3px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), inset -2px -2px 4px rgba(255, 255, 255, 0.7);
+}
+
+.btn:active {
+    transform: translateY(2px);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logout-btn {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    color: white;
+}
+.logout-btn:hover {
+    background-color: #b02a37;
+}
+
+.registration-container {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* Register link styling */
+.register-link {
+    margin-top: 1rem;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+    .login-form-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-register {
+    background: #4CAF50;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #FADADD;
+    border: none;
+    border-radius: 5px;
+    color: #8B0000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+.header-text {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.call-to-action {
+    text-align: center;
+}
+
+.intro-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    margin-top: 20px;
+}
+.container-1200 {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles cho popup form */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.popup-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.popup-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #999;
+}
+
+.popup-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/* Animation cho popup */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.popup-show {
+    display: flex;
+    animation: fadeIn 0.3s;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color:  #FADADD;
+    color: #8B0000;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table tr:hover {
+    background-color: #ddd;
+    transition: 0.3s;
+}
+
+.text-center {
+    text-align: center;
+    color: red;
+    font-style: italic;
+}
+
+/* Header styling */
+
+
+.navigation ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation li {
+    margin-right: 20px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #007bff;
+}
+
+/* JLPT Level Banner */
+.level-banner {
+    display: flex;
+    margin: 20px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.level {
+    flex: 1;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+/* Màu sắc theo phong cách Nhật Bản */
+.n1 { background-color: #ffffff; color: #333; border-right: 1px solid #ddd; } /* Trắng tinh khôi */
+.n2 { background-color: #C8A2C8; } /* Tím Fuji (藤色) */
+.n3 { background-color: #E4A972; } /* Cam đất ấm áp */
+.n4 { background-color: #81C784; } /* Xanh lá nhạt */
+.n5 { background-color: #FFEB3B; color: #333; } /* Vàng nhẹ của ánh sáng mặt trời */
+p {
+    font-family: "Noto Serif JP", serif; /* Phông chữ thanh lịch, chuẩn Nhật */
+    font-size: 18px;
+    line-height: 1.8; /* Tăng khoảng cách dòng giúp dễ đọc */
+    color: #5A3E36; /* Nâu đất ấm áp, mang cảm giác hoài niệm */
+    text-align: justify; /* Căn đều văn bản */
+    text-indent: 20px; /* Thụt đầu dòng nhẹ để tạo cảm giác văn chương */
+    margin-bottom: 15px;
+    background: linear-gradient(to right, rgba(250, 218, 221, 0.2), rgba(255, 255, 255, 0.8));
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Main content */
+.header-text {
+    color: #333;
+    font-size: 24px;
+}
+
+.intro-text {
+    color: #666;
+    font-size: 16px;
+}
+
+.study-materials, .background, .goal {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Social media section */
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.social-icon {
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    border-radius: 50%;
+}
+
+/* News section */
+.news-section {
+    margin-top: 30px;
+}
+
+.news-item {
+    display: flex;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+.news-image {
+    width: 120px;
+    height: 80px;
+    margin-right: 15px;
+    background-color: #eee;
+}
+
+.news-content {
+    flex: 1;
+}
+
+.news-tag {
+    background-color: #ffcc00;
+    padding: 5px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.news-date {
+    color: #999;
+    font-size: 14px;
+}
+
+/* Countdown ticker */
+.countdown {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.countdown-box {
+    background: #d9534f;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 50px;
+    height:40px;
+    text-align: center;
+}
+.countdown-separator {
+    margin: 0 10px;
+}
+
+/* Footer */
+.footer {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Contact section */
+.contact {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Call to action buttons */
+.call-to-action {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.test-link {
+    display: block;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.test-link:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+.container ul {
+    list-style: none; /* Loại bỏ dấu chấm */
+    padding: 0; /* Xóa padding mặc định */
+}
+
+.container li {
+    margin-bottom: 10px; /* Tạo khoảng cách giữa các mục */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng */
+}
+li {
+    font-family: "Poppins", "Noto Sans JP", sans-serif;
+    font-size: 18px;
+    color: #774c60; /* Màu tím hồng dịu */
+    background: rgba(255, 240, 245, 0.8); /* Hồng nhạt mờ */
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 15px; /* Bo tròn mềm mại */
+    box-shadow: 2px 2px 8px rgba(119, 76, 96, 0.2);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hiệu ứng khi hover */
+  li:hover {
+    background: rgba(255, 230, 235, 1);
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 10px rgba(119, 76, 96, 0.3);
+  }
+
+  /* Hiệu ứng khi click */
+  li:active {
+    transform: scale(0.98);
+  }
+
+  /* Thêm hiệu ứng ánh sáng chạy ngang qua */
+  li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-30deg);
+    transition: left 0.5s ease-in-out;
+  }
+
+  li:hover::after {
+    left: 100%;
+  }
+.filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.year-select {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.year-select:hover {
+    border-color: #2980b9;
+}
+/* Style danh sách cấp độ JLPT */
+.mb-5 {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mb-5 h2 {
+    color: #333;
+    border-left: 5px solid #007bff;
+    padding-left: 10px;
+}
+
+.mb-5 ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mb-5 li {
+    margin: 10px 0;
+}
+
+.mb-5 a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.mb-5 a:hover {
+    background: #0056b3;
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+form {
+    display: grid;
+    gap: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.dropzone {
+    background-color: #f1f1f1;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.dropzone:hover {
+    background-color: #e9ecef;
+}
+
+.dropzone input {
+    display: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header span {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    max-height: 80vh;
+    width: 400px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.drop-zone {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background: #f9f9f9;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.drop-zone.dragover {
+    background: #e0f7ff;
+}
+.scrollable {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.form-group label {
+    flex: 1;
+}
+.form-group select {
+    width: 60px;
+}
+.popup button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.popup button:hover {
+    background: #0056b3;
+}
+select {
+    width: 200px;
+    padding: 8px 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    appearance: none; /* Loại bỏ style mặc định */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+
+  /* Hiệu ứng khi focus */
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  /* Nếu bạn muốn thêm icon mũi tên cho tất cả các select */
+  .select-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .select-container::after {
+    content: '\25BC';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #333;
+  }
+  input,
+  select,
+  textarea {
+    padding: 8px 10px;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  /* Style cho hiệu ứng khi focus */
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  label {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin: 10px 0 6px 0;
+    padding: 4px 8px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #007bff;
+    border-radius: 3px;
+  }
+
+
+span {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ffb6c1, #ff69b4, #ff1493);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 3px 3px 8px rgba(255, 105, 180, 0.7);
+    display: inline-block;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 3px 3px 12px #007bff;
+    }
+    to {
+        text-shadow: 5px 5px 20px #f8f8f8;
+    }
+}
+a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #0077b6; /* Ocean blue */
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #00b4d8; /* Brighter turquoise on hover */
+}
+
+a:active {
+    color: #023e8a; /* Deep ocean blue when clicked */
+}
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    margin-top:-55px;
+    object-fit: cover;
+    z-index: -1;
+}
+

@@ -1,0 +1,33 @@
+docker-compose exec app php artisan migrate
+docker exec -it laravel_app bash
+root@67b7778c28d2:/var/www# mysql -h laravel_mysql -P 3306 -u root -p
+mysql -h laravel_mysql -P 3308 -u root -p
+SHOW DATABASES;
+git push --force origin main
+git push origin main
+s
+C:\Users\Admin\Documents\dumps\Dump20250406 restore DATABASES
+ .\ngrok http http://localhost:8000
+
+
+Sau khi xóa, tạo lại .venv thế nào:
+Tạo lại môi trường ảo:
+
+bash
+python -m venv .venv
+
+Kích hoạt lại:
+
+Windows (CMD):
+
+bash
+.venv\Scripts\activate
+Unix/MacOS/Linux:
+
+bash
+source .venv/bin/activate
+
+Cài lại thư viện:
+
+bash
+pip install -r requirements.txt
